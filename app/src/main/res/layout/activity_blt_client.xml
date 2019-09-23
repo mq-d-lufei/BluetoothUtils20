@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/bt_request_permission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="bt_request_permission"
+            android:text="请求权限" />
+
+        <Button
+            android:id="@+id/bt_scan_mode_discovery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="bt_scan_mode"
+            android:text="允许周围设备检测到" />
+
+        <Button
+            android:id="@+id/bt_get_bluetooth_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onGetBluetoothDeviceList"
+            android:text="获取蓝牙设备类型" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Client" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/black" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="bt_scan"
+            android:text="扫描" />
+
+        <Button
+            android:id="@+id/bt_scan_bond"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="bt_scan_bond"
+            android:text="扫描绑定" />
+
+        <Button
+            android:id="@+id/bt_scan_bond_connect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="扫描绑定连接" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:onClick="bondOnly"
+                android:text="绑定（已知MAC）" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:background="@android:color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_send_message"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="3"
+                android:background="@null"
+                android:hint="send message" />
+
+            <Button
+                android:id="@+id/bt_send"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="Send" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_receive_messge"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="receive message" />
+
+    </LinearLayout>
+</ScrollView>

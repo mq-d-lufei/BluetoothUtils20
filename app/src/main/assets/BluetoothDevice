@@ -1,0 +1,50 @@
+<BluetoothDeviceTypeList>
+
+    <!--未知设备-->
+    <BluetoothDeviceType>
+        <!--int 十六进制-->
+        <serviceClass>0x000000</serviceClass>
+        <!--String-->
+        <deviceGroup>GROUP_NONE</deviceGroup>
+        <!--String-->
+        <deviceType>TYPE_NONE_00</deviceType>
+        <!--int-->
+        <deviceName>未知设备</deviceName>
+    </BluetoothDeviceType>
+
+    <!--科曼C30设备-->
+    <BluetoothDeviceType>
+        <serviceClass>0x980000</serviceClass>
+        <deviceGroup>GROUP_C30</deviceGroup>
+        <deviceType>TYPE_C30_01</deviceType>
+        <deviceName>科曼C30小型</deviceName>
+    </BluetoothDeviceType>
+
+
+    <!--万孚肌钙蛋白-->
+    <BluetoothDeviceType>
+        <serviceClass>0x6F0000</serviceClass>
+        <deviceGroup>GROUP_WF</deviceGroup>
+        <deviceType>TYPE_WF_01</deviceType>
+        <deviceName>万孚肌钙蛋白</deviceName>
+    </BluetoothDeviceType>
+
+    <!--蓝牙打印机-->
+    <BluetoothDeviceType>
+        <!--class待测试-->
+        <serviceClass>0x40000</serviceClass>
+        <deviceGroup>GROUP_PRINTER</deviceGroup>
+        <deviceType>TYPE_PRINTER_01</deviceType>
+        <deviceName>蓝牙打印机01</deviceName>
+    </BluetoothDeviceType>
+
+    <!--手机-->
+    <BluetoothDeviceType>
+        <serviceClass>0x‭5A0000‬</serviceClass>
+        <deviceGroup>GROUP_PHONE</deviceGroup>
+        <deviceType>TYPE_PHONE_01</deviceType>
+        <deviceName>手机01</deviceName>
+    </BluetoothDeviceType>
+
+
+</BluetoothDeviceTypeList>
